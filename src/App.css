@@ -24,14 +24,16 @@
   margin: 0;
   line-height: 100%;
   padding: 2px;
-  border-bottom: 1px solid transparent;
-}
-
-.code-line:hover {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
-  background: rgba(0, 0, 0, 0.068);
 }
 
 .block {
   display: inline-block;
+}
+
+.overlay-line {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 255, 0.137);
+  width: 100%;
+  height: 1em;
 }

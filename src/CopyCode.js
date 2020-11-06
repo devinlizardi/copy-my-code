@@ -39,9 +39,26 @@ function parseJava(props) {
 
     return(
         <div className="code-text-wrapper">
+            <LineOverlay numLines={k}/>
             {textElem}
         </div>
     );
+}
+
+function LineOverlay(props) {
+    const {numLines} = props;
+    const spanElems = [];
+
+    for (let i=0; i<numLines; i++) {
+        spanElems.push(
+            <span className="overlay-line" key={i}/>
+        )
+    }
+
+    return(
+    <>
+        {spanElems}
+    </>)
 }
 
 export default CopyCode;
