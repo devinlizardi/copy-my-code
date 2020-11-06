@@ -1,3 +1,37 @@
-h1 {
-  text-align: center;
+.container {
+  background: gainsboro;
+  width: 30em;
+  position: relative;
+  left: 50%;
+  margin-left: -15em;
+}
+
+.title {
+  text-align: left;
+  font-style: italic;
+  padding: 0.1em 0 0.1em 0.5em;
+  border-bottom: 3px solid black;
+  margin-bottom: 0;
+}
+
+.code-text-wrapper {
+  background: rgb(238, 238, 238);
+  color: rgba(0, 0, 0, 0.452);
+  padding: 0.5em 0, 0.5em 0;
+}
+
+.code-line {
+  margin: 0;
+  line-height: 100%;
+  padding: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.code-line:hover {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+  background: rgba(0, 0, 0, 0.068);
+}
+
+.block {
+  display: inline-block;
 }
