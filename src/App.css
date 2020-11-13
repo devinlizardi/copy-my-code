@@ -1,9 +1,10 @@
 .container {
   background: gainsboro;
-  width: 30em;
+  width: fit-content;
+  padding: 0 1em 0 1em;
   position: relative;
   left: 50%;
-  margin-left: -15em;
+  margin-left: -12em;
 }
 
 .title {
@@ -15,9 +16,11 @@
 }
 
 .code-text-wrapper {
+  position: relative;
   background: rgb(238, 238, 238);
   color: rgba(0, 0, 0, 0.452);
-  padding: 0.5em 0, 0.5em 0;
+  padding: 0.5em 1em 0.5em 0;
+  overflow: hidden;
 }
 
 .code-line {
@@ -31,9 +34,22 @@
 }
 
 .overlay-line {
-  position: absolute;
+  position: relative;
   display: block;
-  background-color: rgba(0, 0, 255, 0.137);
-  width: 100%;
-  height: 1em;
+  width: 30em;
+  height: 1rem;
+  margin: 0 0 0 0;
+  padding: 2px;
+}
+
+.overlay-line:hover {
+  background-color: rgba(0, 0, 255, 0.123);
+}
+
+.overlay-wrapper {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: fit-content;
+  margin: -1.3px 0 0 0;
 }
