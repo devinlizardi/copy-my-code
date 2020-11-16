@@ -3,10 +3,10 @@
 ## A little tool for kinesthetic learners
 
 #### **Props**
-`props.children` : `class Main { public static void main(String[] args) { ... } ... }`
+`props.children` : Your example code for the student to copy, see example below for formatting.
 >formatting, spacing, and everything else here might take some playing with, I'm working on this primarily.
 
-`props.title` : `"Testing Write"`
+`props.title` : String title to display, optional.
 >simple title at the top per section. Images will be added soon too.
 
 #### **Intro**
@@ -27,10 +27,10 @@ I plan on adding more features, like validating each line and having some intera
 #### **Example**
 ```
 <CopyCode title="Testing Write">
-    ```class Main {
+    ` class Main {
         public static void main(String[] args) {
             System.out.println("Hello World!");
         }
-    }```
+    }`
 </CopyCode>
 ```
