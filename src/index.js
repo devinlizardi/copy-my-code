@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CopyCode from './CopyCode';
 
-ReactDOM.render(
-    <App />,
-  document.getElementById('root')
-);
+function App(props) {
+  return (
+    <CopyCode
+      title={props.title}
+      >
+      {props.children}
+      </CopyCode>
+  );
+}
+
+export default App;

@@ -3,10 +3,10 @@
 ## A little tool for kinesthetic learners
 
 #### **Props**
-*props.children* : `class Main { public static void main(String[] args) { ... } ... }`
+`props.children` : `class Main { public static void main(String[] args) { ... } ... }`
 >formatting, spacing, and everything else here might take some playing with, I'm working on this primarily.
 
-*props.title* : "Testing Write"
+`props.title` : `"Testing Write"`
 >simple title at the top per section. Images will be added soon too.
 
 #### **Intro**
@@ -23,3 +23,14 @@ I plan on adding more features, like validating each line and having some intera
 
 [Github Repo](https://github.com/devinlizardi/copy-my-code)  
 [npm Package](https://www.npmjs.com/package/copy-my-code)
+
+#### **Example**
+```
+<CopyCode title="Testing Write">
+    ```class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }```
+</CopyCode>
+```
