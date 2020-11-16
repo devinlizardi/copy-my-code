@@ -34,3 +34,4 @@ I plan on adding more features, like validating each line and having some intera
     }`
 </CopyCode>
 ```
+<img src="https://github.com/devinlizardi/copy-my-code/blob/master/img/Screen%20Shot%202020-11-16%20at%2011.03.01%20AM.png" width="50%" height="50%" alt="output image">
