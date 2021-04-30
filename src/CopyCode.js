@@ -2,14 +2,14 @@ import React, {useEffect} from 'react';
 import './CopyCode.css';
 
 const CopyCode = (props) => {
-  const {title} = props;
-  const clearAll = () => {
-      localStorage.clear();
-  }
+  const {title, containerClass, containerClassName, titleClass, titleClassName} = props;
+
+
+  const clearAll = () => { localStorage.clear() };
 
   return(
-      <div className="container">
-          <h2 className="title">{title}</h2>
+      <div className={containerClassName} style={containerClass}>
+          <h2 className={titleClassName} style={titleClass}>{title}</h2>
           {parseJava(props)}
           <button onClick={clearAll}>clear saved text</button>
       </div>
